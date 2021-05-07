@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:src="@drawable/utopia"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imgsepatu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NamaSepatu"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imgsepatu"
+            android:layout_toEndOf="@+id/imgsepatu"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:text="Nama Menu"/>
+
+        <TextView
+            android:id="@+id/descsepatu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NamaSepatu"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imgsepatu"
+            android:layout_toRightOf="@+id/imgsepatu"
+            android:text="Deskripsi Menu"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hargasepatu"
+            android:textSize="16sp"
+            android:layout_below="@+id/descsepatu"
+            android:layout_toRightOf="@+id/imgsepatu"
+            android:layout_toEndOf="@+id/imgsepatu"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:text="Harga Sepatu"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

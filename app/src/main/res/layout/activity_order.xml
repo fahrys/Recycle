@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:id="@+id/imageOrd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SepatuOrd"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Nama Menu"
+        android:layout_toRightOf="@+id/imageOrd"
+        android:layout_toEndOf="@+id/imageOrd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desOrd"
+        android:text="Deskripsi Menu"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/imageOrd"
+        android:layout_toEndOf="@+id/imageOrd"
+        android:layout_below="@+id/SepatuOrd"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hargaOrd"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/imageOrd"
+        android:layout_toEndOf="@id/imageOrd"
+        android:layout_below="@id/desOrd"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Harga Order"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OrderTxt"
+        android:text="Order"
+        android:textSize="20sp"
+        android:layout_below="@id/imageOrd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/decreaseOrd"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/OrderTxt"
+        android:layout_toEndOf="@+id/OrderTxt"
+        android:layout_below="@id/imageOrd"
+        android:background="@drawable/bg_bottom"
+        android:gravity="center"
+        android:text="-"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JmlOrd"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/decreaseOrd"
+        android:layout_toEndOf="@+id/decreaseOrd"
+        android:layout_below="@id/imageOrd"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:text="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/increaseOrd"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/JmlOrd"
+        android:layout_toRightOf="@id/JmlOrd"
+        android:layout_below="@id/imageOrd"
+        android:background="@drawable/bg_bottom"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="+"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToHardOrd"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/increaseOrd"
+        android:layout_toEndOf="@id/increaseOrd"
+        android:layout_below="@id/imageOrd"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        android:text="0"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/OrderLagi"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/JmlOrd"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:text="Order Lagi"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bayar"
+        android:layout_below="@id/JmlOrd"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="50dp"
+        android:text="Bayar"
+        android:textSize="15dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
